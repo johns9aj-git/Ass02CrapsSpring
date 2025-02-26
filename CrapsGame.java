@@ -22,6 +22,7 @@ public class CrapsGame {
         do {
             diceSum = 0; // diceSum MUST be zero otherwise it'll continuously fail when the player wants
                          // to play again.
+            rollCount = 0; // Resets roll counts for every new play
 
             while (!(diceSum == 2 || diceSum == 3 || diceSum == 7 || diceSum == 11 || diceSum == 12)) {
                 System.out.println("Roll\t Die01\t Die02\t DiceSum");
